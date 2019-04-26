@@ -15,7 +15,7 @@ public class Case1AddCategoryPage {
 	public static void select() 
 	{
 		Select s=new Select(catname);
-		s.selectByIndex(0);
+		s.selectByIndex(1);
 	}
 	
 	@FindBy(how = How.ID,using = "subcategorydropid")
@@ -23,7 +23,7 @@ public class Case1AddCategoryPage {
 	public static void select1() 
 	{
 		Select s=new Select(subcatname);
-		s.selectByIndex(1);
+		s.selectByIndex(9);
 	}
 	
 	@FindBy(how = How.ID,using = "prodid")
@@ -41,8 +41,15 @@ public class Case1AddCategoryPage {
 	@FindBy(how = How.ID,using = "description")
 	public static WebElement desc;
 	
+	@FindBy(how = How.NAME,using = "input-file-preview")
+	public static WebElement browse;
+	
+	@FindBy(how = How.CSS,using = "input[value='Add Product']")
+	public static WebElement addproductbutton;
 	
 	
+	@FindBy(how = How.XPATH,using = "/html/body/main/div/div/div/form/b/i")
+	public static WebElement addsuccess;
 	
 	
 	
