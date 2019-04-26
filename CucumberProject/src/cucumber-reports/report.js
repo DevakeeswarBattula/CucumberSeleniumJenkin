@@ -1,21 +1,13 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/Skeleton/case1addprod.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/Skeleton/demowebshop.feature");
 formatter.feature({
-  "name": "AddCart feature",
+  "name": "DemoWebShop Feature",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "Product AddCart",
+  "name": "RegisterScenario",
   "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@addproduct"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
+  "keyword": "Scenario"
 });
 formatter.before({
   "status": "passed"
@@ -24,36 +16,34 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "user enter url of app",
+  "name": "url of the demowebshop",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "Case1LoginStepDefs.user_enter_url_of_app()"
+  "location": "RegisterStepDefs.url_of_the_demowebshop()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "java.lang.NullPointerException\r\n\tat Skeleton.RegisterStepDefs.url_of_the_demowebshop(RegisterStepDefs.java:35)\r\n\tat ✽.url of the demowebshop(file:src/test/resources/Skeleton/demowebshop.feature:3)\r\n",
+  "status": "failed"
 });
 formatter.step({
-  "name": "user enter data for Addcart",
+  "name": "user enters the data for registration",
   "keyword": "When "
 });
 formatter.match({
-  "location": "Case1LoginStepDefs.user_enter_data_for_Addcart()"
+  "location": "RegisterStepDefs.user_enters_the_data_for_registration()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "product add successfully",
+  "name": "user is registered successfully",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Case1LoginStepDefs.product_add_successfully()"
+  "location": "RegisterStepDefs.user_is_registered_successfully()"
 });
 formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
+  "status": "skipped"
 });
 });

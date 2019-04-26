@@ -18,7 +18,7 @@ import cucumber.api.java.en.When;
 
 public class RegisterStepDefs {
 	WebDriver driver;
-	@Before
+	//@Before
 	public void init()
 	{
 
@@ -40,7 +40,7 @@ public class RegisterStepDefs {
 	    RegisterPage.gender.click();
 	    RegisterPage.firstname.sendKeys("battula");
 	    RegisterPage.lastname.sendKeys("devakeeswar");
-	    RegisterPage.email.sendKeys("bat1112333@gmail.com");
+	    RegisterPage.email.sendKeys("bat1112333w@gmail.com");
 	    RegisterPage.password.sendKeys("1234567890");
 	    RegisterPage.confirmpassword.sendKeys("1234567890");
 	    RegisterPage.registerbutton.click();

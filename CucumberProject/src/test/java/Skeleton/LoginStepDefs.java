@@ -19,7 +19,7 @@ import io.cucumber.datatable.DataTable;
 
 public class LoginStepDefs {
 	WebDriver driver;
-	@Before
+	//@Before
 	public void before()
 	{
 		driver=DriverUtility.getDriver("chrome");
@@ -27,7 +27,7 @@ public class LoginStepDefs {
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		
 	}
-	@After
+	//@After
 	public void after()
 	{
 		driver.close();

@@ -6,7 +6,9 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(plugin= {"pretty","html:src/cucumber-reports"},features= {"src/test/resources/Skeleton/case2.feature"},monochrome=true,dryRun=true)
+@CucumberOptions(plugin= {"pretty","html:src/cucumber-reports",
+						"json:src/cucmber-reports/reports.json"},features= {"src/test/resources/Skeleton/demowebshop.feature"},monochrome=true,dryRun=false)
+
 public class RunCucumber {
 
 }

@@ -1,0 +1,81 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2019-04-26T10:22:03.302Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5809821501,
+              "status": "passed"
+            },
+            "match": {
+              "location": "case2stepdefs.init()"
+            }
+          },
+          {
+            "result": {
+              "duration": 7146168200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Case1LoginStepDefs.init()"
+            }
+          }
+        ],
+        "line": 2,
+        "name": "RegisterScenario",
+        "description": "",
+        "id": "demowebshop-feature;registerscenario",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat Skeleton.RegisterStepDefs.url_of_the_demowebshop(RegisterStepDefs.java:35)\r\n\tat ✽.url of the demowebshop(file:src/test/resources/Skeleton/demowebshop.feature:3)\r\n",
+              "duration": 4270299,
+              "status": "failed"
+            },
+            "line": 3,
+            "name": "url of the demowebshop",
+            "match": {
+              "location": "RegisterStepDefs.url_of_the_demowebshop()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 25701,
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "user enters the data for registration",
+            "match": {
+              "location": "RegisterStepDefs.user_enters_the_data_for_registration()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 14000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user is registered successfully",
+            "match": {
+              "location": "RegisterStepDefs.user_is_registered_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "DemoWebShop Feature",
+    "description": "",
+    "id": "demowebshop-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Skeleton/demowebshop.feature",
+    "tags": []
+  }
+]
